@@ -1,0 +1,106 @@
+.app {
+  min-height: 100vh;
+  background: #f4f6f8;
+  color: #1f2937;
+  padding-bottom: 40px;
+}
+
+header {
+  background: #1f2937;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+header p {
+  margin: 8px 0 0;
+  color: #d1d5db;
+}
+
+main {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.controls input,
+.controls select,
+.ticket-card select {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: white;
+  font-size: 14px;
+  color: #1f2937;
+}
+
+.controls input {
+  flex: 1;
+  min-width: 250px;
+  color: #1f2937;
+}
+
+.ticket-list h2 {
+  margin-bottom: 15px;
+}
+
+.ticket-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.ticket-card h3 {
+  margin-top: 0;
+  color: #111827;
+}
+
+.ticket-card p {
+  color: #4b5563;
+}
+
+.ticket-card small {
+  color: #6b7280;
+}
+
+.ticket-card label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  .ticket-card {
+    flex-direction: column;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  .controls {
+    flex-direction: column;
+  }
+
+  .controls input {
+    min-width: auto;
+  }
+}
